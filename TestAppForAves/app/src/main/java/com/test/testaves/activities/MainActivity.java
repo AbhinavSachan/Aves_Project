@@ -47,7 +47,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void getData() {
-        ApiUtil.getInterface().getImages(1,7).enqueue(new Callback<List<ImageDataModel>>() {
+        ApiUtil.getInterface().getImages(1,20).enqueue(new Callback<List<ImageDataModel>>() {
             @Override
             public void onResponse(@NonNull Call<List<ImageDataModel>> call, @NonNull Response<List<ImageDataModel>> response) {
                 if (response.body() != null) {
